@@ -1,4 +1,4 @@
-defmodule Agala.Provider.Telegram.Helpers do
+defmodule Agala.Provider.Whatsapp.Helpers do
   alias Agala.Provider.Whatsapp.Conn.Response
 
   @spec send_message(conn :: Agala.Conn.t, message :: String.t, opts :: Enum.t) :: Agala.Conn.t

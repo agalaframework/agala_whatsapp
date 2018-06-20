@@ -2,7 +2,7 @@ defmodule Agala.Provider.Whatsapp.Conn.ProviderParams do
   defstruct [
     amqp_params: nil,
     bot_name: nil,
-    domain: "agala"
+    domain: :agala
   ]
 
   @type t :: %Agala.Provider.Whatsapp.Conn.ProviderParams{
