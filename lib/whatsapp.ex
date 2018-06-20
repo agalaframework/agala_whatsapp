@@ -6,7 +6,7 @@ defmodule Agala.Provider.Whatsapp do
   Module providing adapter for Whatsapp
   """
 
-  def init(bot_params, :receiver) do
+  def init(bot_params, module) do
     {:ok, conn} = AMQP.Connection.open(bot_params.provider_params.amqp_params)
     {:ok, chan} = AMQP.Channel.open(conn)
 
