@@ -5,6 +5,6 @@ defmodule Agala.Provider.Whatsapp.Responser do
   Main entry point method. Process the response
   """
   def response(conn, bot_params) do
-    AMQP.Basic.publish(bot_params.provider_params.channel, "", bot_params.private.out_queue, :erlang.term_to_binary(conn.response))
+    AMQP.Basic.publish(bot_params.request_bot_params.private.channel, "", bot_params.request_bot_params.private.out_queue, :erlang.term_to_binary(conn.response))
   end
 end
