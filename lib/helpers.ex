@@ -7,6 +7,6 @@ defmodule Agala.Provider.Whatsapp.Helpers do
         to: user_id,
         body: message
       }
-    })
+    )
   end
 end
